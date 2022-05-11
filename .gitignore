@@ -1,0 +1,7 @@
+experiments/
+data/
+*.pyc
+*.txt
+*.csv
+
+!requirements.txt

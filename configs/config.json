@@ -1,0 +1,33 @@
+{
+    "data_params":{
+        "feature_ids":[0,1,2,3,4,5,6,7,8],
+        "fold_means": [357.87565, 356.72941, 360.50329, 355.27085, 357.84044],
+        "fold_stds": [288.47657, 287.1689, 290.45408, 286.90142, 288.45889],
+        "num_workers": 0
+    },
+    "training_params":{
+        "batch_size": 1,
+        "total_epochs": 150,
+        "learning_rate": 0.0001,
+        "beta1": 0.9,
+        "beta2": 0.999,
+        "l2_reg_alpha": 0.0001,
+        "aux_lambda": 0.1
+    },
+    "model_params":{
+        "initial_depth": 32
+    },
+    "save_freqs":{
+        "model_freq": 1
+    },
+    "data_source": {
+        "img_data_dir": "data/images",
+        "fold_splits": "data/fold_splits",
+        "feature_labels_file": "data/labels.csv"
+    },
+    "experiment_dirs": {
+        "load_dir": "last",
+        "model_dir" : "models",
+        "test_output_dir" : "test_output"
+    }
+}
